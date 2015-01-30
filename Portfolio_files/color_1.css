@@ -1,0 +1,377 @@
+ /*----------------------------------
+		Theme417_Windy
+		Cat Generic
+----------------------------------*/
+
+body {
+	
+}
+
+.sf_outer_wrapper {
+	
+}
+
+.sf_extra1 {
+	
+}
+
+.sf_wrapper {
+}
+
+/*--------------------------------
+		Top Navigation
+---------------------------------*/
+
+.sf_navigation_top {	
+}
+
+.sf_navigation_top ul{
+	
+}
+
+.sf_navigation_top ul:after{
+}
+
+
+.sf_navigation_top ul li {
+	
+}
+
+.sf_navigation_top ul li.sf_last_nav_item{
+
+}
+
+.sf_navigation_top ul li.sf_first_nav_item{
+
+}
+
+.sf_navigation_top ul li a {
+	
+}
+
+.sf_navigation_top ul li a:visited {
+	
+}
+
+.sf_navigation_top ul li a:hover{
+	
+}
+
+/*--------------------------------
+		End Top Navigation
+---------------------------------*/
+
+
+
+.sf_extra10 {
+	
+}
+
+
+
+/*--------------------------------
+		Header
+---------------------------------*/
+
+.sf_header_wrapper {
+	background-image: url(images/main_1.jpg);
+	background-repeat: no-repeat;
+	background-position: right;	
+}
+
+.sf_extra2 {
+}
+
+.sf_main_header {
+	color: #fff;
+}
+
+.sf_extra3 {
+}
+
+.sf_sub_header {
+	
+}
+
+/*--------------------------
+		End Header
+--------------------------*/
+
+
+
+.sf_extra4 {
+}
+
+
+
+/*--------------------------------
+		Bottom Navigation
+---------------------------------*/
+
+.sf_navigation{
+}
+
+.sf_navigation ul{	
+}
+
+.sf_navigation ul:after{
+}
+
+.sf_navigation ul li {
+
+}
+
+.sf_navigation ul li.sf_last_nav_item{
+}
+
+.sf_navigation ul li.sf_first_nav_item{
+
+}
+
+.sf_navigation ul li a {
+	background-color: #9F1A2F;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.sf_navigation ul li a:visited {
+	color: #fff;
+}
+
+.sf_navigation ul li a:hover{
+	color: #fff;
+	background-color: #333;
+}
+
+/*--------------------------------
+		End Bottom Navigation
+---------------------------------*/
+
+
+
+.sf_extra5 {
+}
+
+
+
+/*--------------------------------
+		 	Page Title
+---------------------------------*/
+
+.sf_pagetitle {
+	color: #fff;
+}
+
+/*--------------------------------
+		 End Page Title
+---------------------------------*/
+
+
+
+.sf_extra6 {
+	sf_edit: true;
+}
+
+
+
+/*--------------------------------
+		 Sub Navigation
+---------------------------------*/
+
+.sf_subnavigation {
+	display: none;
+}
+
+.sf_subnavigation ul{
+	
+}
+
+.sf_subnavigation ul:after{
+	
+}
+
+.sf_subnavigation ul li {
+	
+}
+
+.sf_subnavigation ul li.sf_last_nav_item{
+
+}
+
+.sf_subnavigation ul li.sf_first_nav_item{
+
+}
+
+.sf_subnavigation ul li a {
+	
+}
+
+.sf_subnavigation ul li a:visited {
+	
+}
+
+.sf_subnavigation ul li a:hover{
+	
+}
+
+/*--------------------------------
+		 End Sub Navigation
+---------------------------------*/
+
+.sf_extra11 {
+
+}
+	
+/*--------------------------
+		Content
+--------------------------*/
+
+.sf_content {
+	sf_edit: true;
+}
+
+.sf_content img {
+	
+}
+
+/*--------------------------
+		End Content
+--------------------------*/
+
+
+
+.sf_extra12 {
+	sf_edit: true;
+}
+
+
+
+/*--------------------------------
+		 Sub Navigation2
+---------------------------------*/
+
+.sf_subnavigation2 {
+	display: none;
+}
+
+.sf_subnavigation2 ul{
+	
+}
+
+.sf_subnavigation2 ul:after{
+	
+}
+
+.sf_subnavigation2 ul li {
+	
+}
+
+.sf_subnavigation2 ul li.sf_last_nav_item{
+
+}
+
+.sf_subnavigation2 ul li.sf_first_nav_item{
+
+}
+
+.sf_subnavigation2 ul li a {
+	
+}
+
+.sf_subnavigation2 ul li a:visited {
+	
+}
+
+.sf_subnavigation2 ul li a:hover{
+	
+}
+
+/*--------------------------------
+		 End Sub Navigation2
+---------------------------------*/
+
+
+
+.sf_extra7 {
+}
+
+.sf_extra7 span{
+	
+}
+
+
+
+/*--------------------------
+		 Footer
+--------------------------*/
+
+.sf_footer {	
+	background-color: #333;
+	color: #ccc;
+}
+
+/*--------------------------
+		End Footer
+--------------------------*/
+
+
+.sf_extra8 {
+	
+}
+
+.sf_extra9 {
+	
+}
+
+
+/*--------------------------
+		Extra Stuff
+--------------------------*/
+
+
+a:link {
+	
+}
+
+a:visited {
+	
+}
+
+a:hover {
+	
+}
+/** 
+ * ------------------------------------------------------------------
+ * @section DBNow
+ * ------------------------------------------------------------------
+ */
+
+.Data_Central_color7 {
+	background-color:#8F1128;
+	color:#fff;
+}
+
+.Data_Central_color1 {
+	background-color:#9F1A2F;
+	color:#fff;
+}
+
+.Data_Central_color2 {
+	background-color:#3f3f3f;
+}
+
+.Data_Central_color3 {
+	background-color:#303030;
+}
+
+.Data_Central_color6 {
+	background-color:#1f1f1f;
+}
+
+.Data_Central_color4 {
+	background-color:#000000;
+}
+
+.Data_Central_color5 {
+	border-color:#000000;
+}
