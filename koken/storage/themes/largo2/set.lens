@@ -1,0 +1,67 @@
+<koken:include file="inc/header.html" />
+
+<!-- Load this template's source data (set) and limit for pagination -->
+<koken:load limit="20">
+
+	<!-- Add Facebook Open Graph and Twitter Cards metadata for nicer sharing -->
+	<koken:head>
+		<meta property="og:site_name" content="{{ site.title }}" />
+		<meta property="og:title" content="{{ album.title strip_html="true" }}" />
+		<meta property="og:description" content="{{ album.summary | album.description strip_html="true" }}" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="{{ album.url }}" />
+		<koken:covers><koken:shift>
+		<meta property="og:image" content="{{ content.presets.medium_large.url }}" />
+		<meta property="og:image:width" content="{{ content.presets.medium_large.width }}" />
+		<meta property="og:image:height" content="{{ content.presets.medium_large.height }}" />
+		</koken:shift></koken:covers>
+		<koken:not empty="profile.twitter">
+			<meta name="twitter:card" content="gallery" />
+			<meta name="twitter:site" content="@{{ profile.twitter }}" />
+			<meta name="twitter:creator" content="@{{ profile.twitter }}" />
+			<koken:covers minimum="4" limit="4">
+				<koken:loop>
+					<meta name="twitter:image{{ index }}" content="{{ content.presets.medium_large.cropped.url }}">
+				</koken:loop>
+			</koken:covers>
+		</koken:not>
+	</koken:head>
+
+	<!-- If set's visibility is unlisted, show message -->
+	<koken:unlisted>
+		<p class="unlisted">
+			This set is unlisted. Please don't share a link to it.
+		</p>
+	</koken:unlisted>
+
+	<div class="nofloat">
+
+		<!-- Display the set's title -->
+		<h2>
+			{{ album.title }}
+		</h2>
+
+		<!-- Display the set's description -->
+		<p>{{ album.description paragraphs="true" }}</p>
+
+		<!-- Loop over all the albums the set contains. Dislay cover image, title and caption and link each to albums.lens -->
+		<koken:include file="inc/loop-album-grid.html" />
+
+		<!-- Display pagination links -->
+		<koken:include file="inc/pagination.html" />
+
+	</div> <!-- close .lcol -->
+
+	<!-- close .rcol -->
+
+	<!-- Fallback content if no data was loaded by koken:load -->
+	<koken:else>
+
+		<!-- Display fallback message in Site editor only -->
+		<koken:note>
+			No set found. Create one in the Library.
+		</koken:note>
+
+</koken:load>
+
+<koken:include file="inc/footer.html" />

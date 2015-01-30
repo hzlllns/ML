@@ -1,0 +1,420 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: 0;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+	font: 15px/22px "Open Sans", Arial, sans-serif;
+	background-color: #ffffff;
+	font-weight: 400;
+	color: #2C2C2C;
+	margin-top: 4em;
+}
+
+a { 
+	color: #949494; 
+}
+
+a:hover {
+	color: grey;
+}
+
+/* everybody get down */
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+blockquote,
+p,figure,
+nav,header,article,section,time,
+img,.slideshow,
+pre,table,fieldset,hr
+{
+    margin-bottom:1.42857143rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin-top:0;
+	font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+.comma_sep span:after {
+	content:", ";
+}
+
+.comma_sep span:last-child:after {
+	content:"";
+}
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a
+{
+	color:inherit;
+}
+
+hr {
+	border-top-color: rgba(0,0,0,0.2);
+}
+
+/*
+	LAYOUT
+*/
+
+div.container {
+	max-width:960px;
+	margin:0 auto;
+	text-align:left;
+}
+
+header.main {
+	margin-bottom:3em;
+}
+
+footer.main {
+	clear:both;
+	padding-bottom:2em;
+}
+
+nav {
+	margin:1em 0;
+}
+
+nav ul {
+	margin:0;
+	padding:0;
+	text-align: center;
+	font-size: 13px;
+}
+
+nav ul li {
+	display:inline-block;
+	margin:0 15px 0 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/* highlights navigation link for current page - assigned automatically by Koken */
+nav a.k-nav-current,
+nav a.k-pagination-current
+{
+	font-weight:bold;
+}
+
+#pagination {
+	margin-bottom:2em;
+}
+
+.main {
+	display: block;
+	margin-bottom:3em;
+	text-align: center;
+}
+
+
+main { margin-bottom: 80px; }
+
+
+article {
+	margin-bottom:3em;
+}
+
+section {
+	margin-bottom:2em;
+}
+
+section header {
+	margin-bottom:2em;
+}
+
+footer {
+	font-size:90%;
+}
+
+.slideshow_nav {
+	margin-bottom:1em;
+	clear:both;
+}
+
+ul.blank {
+	list-style:none;
+	padding:0;
+	margin:0 0 1em;
+}
+
+ul.blank li {
+	padding:0;
+	margin:0;
+	display:block;
+}
+
+ul.feat-essays {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+ul.feat-essays li {
+	margin:0;
+	padding:0;
+	float:left;
+	width:22%;
+}
+
+ul.feat-essays li {
+	margin-right:4%;
+}
+
+ul.feat-essays li:nth-child(4n+4) {
+	margin-right:0;
+}
+
+ul.feat-essays li:nth-child(4n+1) {
+	clear:left;
+}
+
+#bread {
+	font-size:90%;
+	margin-top:0;
+	margin-bottom:2em;
+}
+
+#content-pag {
+	float:right;
+}
+
+div.lcol {
+	width:70%;
+	float:left;
+	margin-right:5%;
+}
+
+div.rcol {
+	width:25%;
+	float:left;
+}
+
+div.lcol.nofloat, div.rcol.nofloat { float:none; }
+
+/* SETS ----------- */
+.item .info h4 {
+	text-align: center;
+}
+
+.item .info p {
+	color: #A2A2A2;
+	font-size: 12px;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+ol.archive li {
+	width:210px;
+	margin-right:10px;
+	margin-bottom:10px !important;
+	display:inline-block;
+}
+
+ol.archive.content li {
+	width:148px;
+}
+
+ol.archive.albums li {
+	width:227px;
+}
+
+ol.archive.essays li {
+	width:310px;
+	margin-bottom:1em !important;
+}
+
+ol.archive.content li:nth-child(6), ol.archive.albums li:nth-child(4), ol.archive.essays li:nth-child(3) {
+	margin-right:0;
+}
+
+p.unlisted {
+	background:#789dbb;
+	padding:1em;
+	color:#d5e5f2;
+}
+
+/*
+	Helper classes
+	See: http://help.koken.me/customer/portal/articles/828695-css-classes
+*/
+
+/* wrapper for inserted media */
+.k-content-embed {
+	margin:1em 0;
+}
+
+/* wrapper of the media asset itself */
+.k-content {
+	line-height:0; /* resolves html whitespace */
+}
+
+/* wrapper for title/caption underneath photo/video, if turned on */
+.k-content-text {
+	padding:0 0 1em;
+}
+
+/* wrapper for the media's title */
+.k-content-title {
+	display:block;
+	font-style:italic;
+}
+
+/* wrapper for the media's caption */
+.k-content-caption {}
+
+/* used for fallback text in console */
+.k-note {}
+
+/* assigned to any link that links to the lightbox */
+.k-link-lightbox { cursor:-webkit-zoom-in;cursor:-moz-zoom-in; }
+
+/* assigned to body by Image Protect plugin if Pinterest pinning is disabled */
+body.k-image-protect-nopin a.social-pinterest {
+	display:none;
+}
+
+a.CV {
+	padding: 10px 30px;
+	display: inline-block;
+	background-color: #2C2C2C;
+	color: #fff;
+}
+
+a.CV:hover { 
+	color: #fff;
+	background-color: #B7916C;
+}
+
+
+/*
+ * Mosaic image layout
+ */
+
+.k-mosaic {
+	position:relative;
+	display:block;
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.k-mosaic:before, .k-mosaic:after {
+	content: " ";
+	display:table;
+}
+.k-mosaic:after {
+	clear:both;
+}
+.k-mosaic > li {
+	display:inline;
+	height:auto;
+	float:left;
+	font-size:0 !important;
+	line-height:0 !important;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.k-mosaic img {
+	max-height: none !important;
+	vertical-align:baseline;
+}
+
+.k-mosaic-1 > li { width:100%; }
+.k-mosaic-1 > li:nth-of-type(n) { clear:none; }
+.k-mosaic-1 > li:nth-of-type(1n+1) { clear:both; }
+
+.k-mosaic-2 > li { width:50%; }
+.k-mosaic-2 > li:nth-of-type(n) { clear:none; }
+.k-mosaic-2 > li:nth-of-type(2n+1) { clear:both; }
+
+.k-mosaic-3 > li { width:33.333333333%; }
+.k-mosaic-3 > li:nth-of-type(n) { clear:none; }
+.k-mosaic-3 > li:nth-of-type(3n+1) { clear:both; }
+
+.k-mosaic-4 > li { width:25%; }
+.k-mosaic-4 > li:nth-of-type(n) { clear:none; }
+.k-mosaic-4 > li:nth-of-type(4n+1) { clear:both; }
+
+.k-mosaic-5 > li { width:20%; }
+.k-mosaic-5 > li:nth-of-type(n) { clear:none; }
+.k-mosaic-5 > li:nth-of-type(5n+1) { clear:both; }
+
+.k-mosaic-6 > li { width:16.66667%; }
+.k-mosaic-6 > li:nth-of-type(n) { clear:none; }
+.k-mosaic-6 > li:nth-of-type(6n+1) { clear:both; }
+
+.k-mosaic-7 > li { width:14.28571%; }
+.k-mosaic-7 > li:nth-of-type(n) { clear:none; }
+.k-mosaic-7 > li:nth-of-type(7n+1) { clear:both; }
+
+.k-mosaic-8 > li { width:12.5%; }
+.k-mosaic-8 > li:nth-of-type(n) { clear:none; }
+.k-mosaic-8 > li:nth-of-type(8n+1) { clear:both; }
+
+.k-mosaic-9 > li { width:11.11111%; }
+.k-mosaic-9 > li:nth-of-type(n) { clear:none; }
+.k-mosaic-9 > li:nth-of-type(9n+1) { clear:both; }
+
+.k-mosaic-10 > li { width:10%; }
+.k-mosaic-10 > li:nth-of-type(n) { clear:none; }
+.k-mosaic-10 > li:nth-of-type(10n+1) { clear:both; }
+
+.k-mosaic.edge > li {
+	margin: 1px 1px 0 0;
+}
+
+.k-mosaic-1.edge li:first-child,
+.k-mosaic-2.edge > li:nth-of-type(-n+2),
+.k-mosaic-3.edge > li:nth-of-type(-n+3),
+.k-mosaic-4.edge > li:nth-of-type(-n+4),
+.k-mosaic-5.edge > li:nth-of-type(-n+5),
+.k-mosaic-6.edge > li:nth-of-type(-n+6),
+.k-mosaic-7.edge > li:nth-of-type(-n+7),
+.k-mosaic-8.edge > li:nth-of-type(-n+8),
+.k-mosaic-9.edge > li:nth-of-type(-n+9),
+.k-mosaic-10.edge > li:nth-of-type(-n+10) { margin-top: 0 !important; }
+
+.k-mosaic-1.edge li,
+.k-mosaic-uneven:last-child,
+.k-mosaic-2.edge > li:nth-of-type(2n),
+.k-mosaic-3.edge > li:nth-of-type(3n),
+.k-mosaic-4.edge > li:nth-of-type(4n),
+.k-mosaic-5.edge > li:nth-of-type(5n),
+.k-mosaic-6.edge > li:nth-of-type(6n),
+.k-mosaic-7.edge > li:nth-of-type(7n),
+.k-mosaic-8.edge > li:nth-of-type(8n),
+.k-mosaic-9.edge > li:nth-of-type(9n),
+.k-mosaic-10.edge > li:nth-of-type(10n) { margin-right:0 !important; }
+
+.k-mosaic-2.edge > li:nth-of-type(2n+1),
+.k-mosaic-3.edge > li:nth-of-type(3n+1),
+.k-mosaic-4.edge > li:nth-of-type(4n+1),
+.k-mosaic-4.edge > li:nth-of-type(4n+1),
+.k-mosaic-5.edge > li:nth-of-type(5n+1),
+.k-mosaic-6.edge > li:nth-of-type(6n+1),
+.k-mosaic-7.edge > li:nth-of-type(7n+1),
+.k-mosaic-8.edge > li:nth-of-type(8n+1),
+.k-mosaic-9.edge > li:nth-of-type(9n+1),
+.k-mosaic-10.edge > li:nth-of-type(10n+1) { margin-left: 0 !important; }

@@ -1,0 +1,52 @@
+<koken:include file="inc/header.html" />
+
+<!-- Add Facebook Open Graph and Twitter Cards metadata for nicer sharing -->
+<!-- Using a separate koken:load for this so it doesn't conflict with page data -->
+<koken:load limit="4">
+	<koken:head>
+		<meta property="og:site_name" content="{{ site.title }}" />
+		<meta property="og:title" content="{{ labels.album.plural }}" />
+		<meta property="og:description" content="{{ site.description strip_html='true' }}" />
+		<meta property="og:type" content="website" />
+		<koken:first>
+			<koken:covers>
+				<koken:first>
+					<meta property="og:image" content="{{ content.presets.medium_large.url }}" />
+					<meta property="og:image:width" content="{{ content.presets.medium_large.width }}" />
+					<meta property="og:image:height" content="{{ content.presets.medium_large.height }}" />
+				</koken:first>
+			</koken:covers>
+		</koken:first>
+		<meta property="og:url" content="{{ location.site_url }}{{ location.here }}" />
+		<koken:not empty="profile.twitter">
+			<meta name="twitter:card" content="gallery" />
+			<meta name="twitter:site" content="@{{ profile.twitter }}" />
+			<meta name="twitter:creator" content="@{{ profile.twitter }}" />
+			<koken:loop>
+				<koken:covers>
+					<koken:shift>
+						<meta name="twitter:image{{ index }}" content="{{ content.presets.medium_large.cropped.url }}">
+					</koken:shift>
+				</koken:covers>
+			</koken:loop>
+		</koken:not>
+	</koken:head>
+</koken:load>
+<h2>Art Projects</h2>
+	<!-- Slideshow that loads template data (featured content) -->
+	<div class="slideshow">
+		<koken:pulse jsvar="pulse" next="#sldshw_next" previous="#sldshw_prev" toggle="#sldshw_play" fullscreen="#sldshw_fs" restart="#sldshw_restart" fallbacktext="No featured content found. Assign some in the Library." group="featured" source="featured_content" link_to="album" />
+	</div>
+
+	<koken:load infinite="true">
+		<koken:include file="inc/loop-album-grid.html" />
+		<koken:else>
+			<koken:note>
+				<strong>No albums found.</strong>
+			</koken:note>
+	</koken:load>
+
+<!-- Turn on keyboard scrolling (left/right arrow keys). Target each album. -->
+<koken:keyboard_scroll element=".item" />
+
+<koken:include file="inc/footer.html" />

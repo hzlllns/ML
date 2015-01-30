@@ -1,0 +1,20 @@
+{
+	"name": "Largo",
+	"version": "1.0.0",
+	"description": "Custom theme created for Marissa Largo",
+	"demo": "http://koken.me",
+	"author": {
+		"name": "Hazel Llanes",
+		"link": "https://hzl.ca"
+	},
+	"koken_version_required": "0.18.0",
+
+	"navigation_groups": {
+		"footer": {
+			"label": "Footer",
+			"defaults": [
+				"front", "albums", "contents", "essays", "twitter", "facebook", "gplus"
+			]
+		}
+	}
+}
